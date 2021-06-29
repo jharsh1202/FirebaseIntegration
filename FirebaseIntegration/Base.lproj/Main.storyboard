@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Register Controller-->
+        <!--Sign In Controller-->
         <scene sceneID="WOW-gy-g2y">
             <objects>
-                <viewController id="94O-Xs-Aw1" customClass="RegisterController" customModule="FirebaseIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="94O-Xs-Aw1" customClass="SignInController" customModule="FirebaseIntegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rN3-hs-cpu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <action selector="loginPressed:" destination="94O-Xs-Aw1" eventType="touchUpInside" id="T78-re-qar"/>
+                                            <action selector="loginPressed:" destination="94O-Xs-Aw1" eventType="touchUpInside" id="O6o-fb-aRM"/>
                                             <action selector="registerPressed:" destination="Mvx-x8-TFq" eventType="touchUpInside" id="ype-M4-fj2"/>
                                         </connections>
                                     </button>
@@ -87,6 +87,7 @@
                                         <rect key="frame" x="0.0" y="38" width="57" height="30"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
+                                            <action selector="registerPressed:" destination="94O-Xs-Aw1" eventType="touchUpInside" id="YwV-f2-gwn"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="qbc-lm-VA7"/>
                                         </connections>
                                     </button>
@@ -112,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-826" y="40"/>
         </scene>
-        <!--Login Controller-->
+        <!--Sign Up Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="FirebaseIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpController" customModule="FirebaseIntegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,7 +238,7 @@
                                         <rect key="frame" x="0.0" y="380" width="306" height="30"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
-                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UrM-TJ-jmL"/>
+                                            <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UrM-TJ-jmL"/>
                                         </connections>
                                     </button>
                                 </subviews>

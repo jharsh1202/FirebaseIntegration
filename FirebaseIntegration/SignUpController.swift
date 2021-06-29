@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class LoginController: UIViewController {
+class SignUpController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dOBTextField: UITextField!
@@ -22,8 +22,7 @@ class LoginController: UIViewController {
         
     }
 
-    @IBAction func loginTapped(_ sender: UIButton) {
-        
+    @IBAction func signUpTapped(_ sender: UIButton) {
         if let username = emailTextView.text, let password = passwordTextView.text {
             print("username \(username) - password \(password)")
             Auth.auth().createUser(withEmail: username, password: password) { authResult, error in
@@ -36,8 +35,9 @@ class LoginController: UIViewController {
                 if let authResult = authResult {
                     print(authResult)
                     let alert = UIAlertController(title: "Succesful Login", message: "Welcome to our world!!", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Thanks", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Thanks", style: .default, handler: {_ in self.dismissRegisterView()}))
                     self.present(alert, animated: true)
+                    
                 }
             }
         } else {
@@ -46,6 +46,9 @@ class LoginController: UIViewController {
         
     }
     
+    func dismissRegisterView() {
+        self.dismiss(animated: true)
+    }
     
 
 }
