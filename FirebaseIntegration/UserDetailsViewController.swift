@@ -25,6 +25,7 @@ class UserDetailsViewController: UIViewController {
         super.viewDidLoad()
         print("LOADED USERDETAILSVIEW")
         
+        navigationItem.hidesBackButton = true
     }
    
 }
