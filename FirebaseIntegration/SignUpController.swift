@@ -37,7 +37,6 @@ class SignUpController: UIViewController {
                     let alert = UIAlertController(title: "Succesful Login", message: "Welcome to our world!!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Thanks", style: .default, handler: {_ in self.dismissRegisterView()}))
                     self.present(alert, animated: true)
-                    
                 }
             }
         } else {

@@ -14,6 +14,7 @@
 		93482F75268AFA0F008C76C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93482F74268AFA0F008C76C4 /* Assets.xcassets */; };
 		93482F78268AFA0F008C76C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93482F76268AFA0F008C76C4 /* LaunchScreen.storyboard */; };
 		93998B4A268B79FA00C4E480 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93998B49268B79F900C4E480 /* SignInController.swift */; };
+		93998B4C268B941A00C4E480 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93998B4B268B941A00C4E480 /* UserDetailsViewController.swift */; };
 		93F21308268B61E500ECE68A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93F21307268B61E500ECE68A /* FirebaseAuth */; };
 		93F2130A268B62A700ECE68A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93F21309268B62A700ECE68A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		93482F77268AFA0F008C76C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93482F79268AFA0F008C76C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93998B49268B79F900C4E480 /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		93998B4B268B941A00C4E480 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		93F21309268B62A700ECE68A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				93482F6B268AFA0E008C76C4 /* AppDelegate.swift */,
 				93482F6D268AFA0E008C76C4 /* SceneDelegate.swift */,
 				93482F6F268AFA0E008C76C4 /* SignUpController.swift */,
+				93998B4B268B941A00C4E480 /* UserDetailsViewController.swift */,
 				93998B49268B79F900C4E480 /* SignInController.swift */,
 				93482F71268AFA0E008C76C4 /* Main.storyboard */,
 				93482F74268AFA0F008C76C4 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93998B4C268B941A00C4E480 /* UserDetailsViewController.swift in Sources */,
 				93482F70268AFA0E008C76C4 /* SignUpController.swift in Sources */,
 				93482F6C268AFA0E008C76C4 /* AppDelegate.swift in Sources */,
 				93482F6E268AFA0E008C76C4 /* SceneDelegate.swift in Sources */,

@@ -28,6 +28,10 @@ class SignInController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
                 if let authResult = authResult {
                     print(authResult)
+                    self?.performSegue(withIdentifier: "showUserDetailsView", sender: nil)
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let secondVC = storyboard.instantiateViewController(identifier: "SecondViewController")
+//                    show(secondVC, sender: self)
                 }
                 
                 if let error = error {
@@ -36,8 +40,6 @@ class SignInController: UIViewController {
                     alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
                     self?.present(alert, animated: true)
                 }
-
-                
             }
         }
     }
