@@ -1,4 +1,4 @@
-# FirebaseIntegration
+# FirebaseIntegration-iOS
 _This is basic implementation of firebase Auth_
 
 _This includes SignIn, SignUp, Logout with Email using Firebase as a backend service.
